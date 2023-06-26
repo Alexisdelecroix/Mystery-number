@@ -38,12 +38,12 @@ document
                 } essai </h2> <h2> Gagner ! 😃 </h2>  <h3> numéro mystère : ${numberaleatoire} </h3> 
                 <button type="button" class="btn btn-primary" onclick="refresh()">rejouer</button>`;
                 document.querySelector("button").setAttribute("disabled", "disabled");
-                } if ( number != numberaleatoire && chance === 3) {
-                    resultat.innerHTML += `<div class="line"></div>  <h2> ${chance} ${chance > 1 ? "ème" : "er"
-                } essai </h2> <h2> Perdu ! 🥹 </h2>  <h3> numéro mystère : ${numberaleatoire} </h3>
-                <button type="button" class="btn btn-primary" onclick="refresh()">rejouer</button>`;
-                document.querySelector("button").setAttribute("disabled", "disabled");
-                }
+                } 
+                // if ( number != numberaleatoire && chance === 3) {
+                //     resultat.innerHTML += `<div class="line"></div>  <h2> ${chance} ${chance > 1 ? "ème" : "er"
+                // } essai </h2> <h2> Perdu ! 🥹 </h2>  <h3> numéro mystère : ${numberaleatoire} </h3>
+                // <button type="button" class="btn btn-primary" onclick="refresh()">rejouer</button>`;
+                // }
             } , 1000);
         }
         //  else {
