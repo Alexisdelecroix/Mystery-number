@@ -1,0 +1,18 @@
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.block{
+    width: 350px;
+    border: 1px solid black;
+}
+
+.block p{
+    text-align: center;
+}
