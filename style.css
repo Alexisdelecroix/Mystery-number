@@ -16,3 +16,22 @@
 .block p{
     text-align: center;
 }
+
+.card{
+    border: 1px solid black;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+}
