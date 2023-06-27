@@ -32,7 +32,6 @@ function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
 
   if (event.target.id === "easy") {
     easySess.classList.add("active");
-    easySess.classList.remove("active");
   } else if (event.target.id === "medium") {
     mediumSess.classList.add("active");
   } else if (event.target.id === "hard") {

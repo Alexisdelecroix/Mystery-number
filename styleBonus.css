@@ -1,55 +1,80 @@
 
 .container{
-    height: 100vh;
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding-bottom: 25px;
     /* display: flex;
     flex-wrap: wrap; */
 }
 
-
 header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    height: 100px;
-    width: 70%;
+header h1{
+    font-size: 50px;
+    rotate: 2deg;
+    font-family: 'Shadows Into Light', cursive;
+    margin-bottom: 10px;
+}
+
+
+nav{
     margin: auto;
+    height: 100px;
+    width: 40%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-header button {
-    border-radius: 5px;
-    padding: 10px 15px;
-    background-color: #84A7A1;
-    color: #0E2954;
+nav button {
+    margin: auto;
+    margin-top: 15px;
+    width: 70px;
+    height: 45px;
+    background: rgba(90, 100, 160, 0.082);
+    background-image: linear-gradient(to right bottom, #d16ba57c, #c777b87e, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    color: rgb(11, 11, 71);
+    border: 2px solid black;
+    border-radius: 15px;
     font-family: 'Caprasimo', cursive;
-    font-weight: 100;
 
 }
 
 
-#nombre{
-    height: 20px;
-}
 
 #inactif{
     background-color: #84A7A1;
+    border: 2px solid black;
     color: #0E2954;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
 }
  .card{
-    border: 1px solid black;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 25px;
+ 
 }
 
 .card-text{
     text-align: center;
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Caprasimo', cursive;
+    color: rgb(34, 36, 36);
+
 }
 
 .center{
     text-align: center;
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+
 }
 
 .line{
@@ -60,9 +85,9 @@ header button {
 }
 
 .btn{
-    padding: 5px 15px;
     border-radius: 5px;
     background-color: #84A7A1;
+    border: 2px solid black;
     color: #0E2954;
     margin-bottom: 10px;
     font-family: 'Caprasimo', cursive;
@@ -70,14 +95,51 @@ header button {
 
 
 .none{
-    width: 100%;
-    height: 90vh;
+    width: 55%;
+    margin: auto;
     justify-content: center;
     align-items: center;
     display: none;
+    border: 2px solid black;
+    background: rgba(90, 100, 160, 0.082);
+    background-image: linear-gradient(to right bottom, #d16ba57c, #c777b87e, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    border-radius: 25px;
+}
+
+.aside{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button{
+    margin: auto;
+    margin-top: 15px;
+    width: 70px;
+    height: 45px;
+    background: rgba(90, 100, 160, 0.082);
+    background-image: linear-gradient(to right bottom, #d16ba57c, #c777b87e, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    color: rgb(11, 11, 71);
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: 'Caprasimo', cursive;
 }
 
 .none.active{
 display: flex;
+}
+
+.nombre{
+    margin: auto;
+    width: 60px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: 'Caprasimo', cursive;
+    font-size: 20px;
 }
 

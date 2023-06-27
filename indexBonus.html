@@ -17,21 +17,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
   </head>
 
   <main class="container">
+
+
     <header>
+      <h1>Trouve le chiffre mystère</h1>
+    </header>
+    <nav>
+
       <button id="easy">Easy</button>
       <button id="medium">Medium</button>
       <button id="hard">Hard</button>
-    </header>
+    </nav>
 
 
     <section class="none" id="facile">
-    <input type="number" id="nombre" placeholder="Entrer un chiffre" />
-    <button id="lvlFacile" type="submit">
+      <div class="aside">
+    <input type="number" id="nombre" class="nombre" placeholder="Entrer un chiffre" />
+    <button id="lvlFacile" class="bouton" type="submit">
       Tester
     </button>
+  </div>
     <div class="card" style="width: 18rem">
       <div class="card-body">
         <p class="card-text">
@@ -45,12 +56,12 @@
 
 
   <section class="none" id="moyen">
-    
-    <input type="number" id="nombre1" placeholder="Entrer un chiffre" />
-    <button id="lvlMedium" type="submit">
+   <div class="aside" >
+    <input type="number" id="nombre1" class="nombre" placeholder="Entrer un chiffre" />
+    <button id="lvlMedium" class="bouton" type="submit">
       Tester
     </button>
-
+   </div>
     <div class="card" style="width: 18rem">
       <div class="card-body">
         <p class="card-text">
@@ -64,10 +75,12 @@
 
 
   <section class="none" id="difficile">
-    <input type="number" id="nombre2" placeholder="Entrer un chiffre" />
-    <button id="lvlHard" type="submit">
+    <div class="aside">
+    <input type="number" id="nombre2" class="nombre" placeholder="Entrer un chiffre" />
+    <button id="lvlHard" class="bouton" type="submit">
       Tester
     </button>
+  </div>
     <div class="card" style="width: 18rem">
       <div class="card-body">
         <p class="card-text">
