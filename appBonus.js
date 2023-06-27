@@ -12,25 +12,27 @@ let easySess = document.getElementById("facile");
 let mediumSess = document.getElementById("moyen");
 let hardSess = document.getElementById("difficile");
 
+
 btnEasy.addEventListener("click", (event) => {
-  myFunction(event, 10, 4, 3, "lvlFacile", "resultat");
+  myFunction(event, 10, 4, 3, "lvlFacile", "resultat", "nombre");
 });
 
 btnMedium.addEventListener("click", (event) => {
-  myFunction(event, 50, 3, 2, "lvlMedium", "resultat1");
+  myFunction(event, 50, 3, 2, "lvlMedium", "resultat1", "nombre1");
 });
 
 btnHard.addEventListener("click", (event) => {
-  myFunction(event ,100, 2, 1, "lvlHard", "résultat2");
+  myFunction(event ,100, 2, 1, "lvlHard", "resultat2", "nombre2");
 });
 
-function myFunction(event, max, chance1, chance2, lvl, result) {
+function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
   easySess.classList.remove("active");
   mediumSess.classList.remove("active");
   hardSess.classList.remove("active");
 
   if (event.target.id === "easy") {
     easySess.classList.add("active");
+    easySess.classList.remove("active");
   } else if (event.target.id === "medium") {
     mediumSess.classList.add("active");
   } else if (event.target.id === "hard") {
@@ -47,8 +49,9 @@ function myFunction(event, max, chance1, chance2, lvl, result) {
     .getElementById(lvl)
     .addEventListener("click", function (event) {
       event.preventDefault();
-      const number = document.getElementById("nombre").value;
+      const number = document.getElementById(nombre).value;
       let resultat = document.getElementById(result);
+      console.log(number);
       console.log(chance);
       if (chance < chance1) {
         setTimeout(() => {
