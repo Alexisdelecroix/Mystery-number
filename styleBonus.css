@@ -1,13 +1,18 @@
-
+.bgImage{
+  
+}
 .container{
     width: 80%;
     margin: auto;
     border: 2px solid black;
     border-radius: 25px;
     padding-bottom: 25px;
+    /* background-image: url(chiffres-noirs-transformed.png);
+    opacity: 50px; */
     /* display: flex;
     flex-wrap: wrap; */
 }
+
 
 header{
     width: 100%;
@@ -21,6 +26,8 @@ header h1{
     rotate: 2deg;
     font-family: 'Shadows Into Light', cursive;
     margin-bottom: 10px;
+    /* color: white; */
+    color: black;
 }
 
 
@@ -67,6 +74,7 @@ nav button {
     text-align: center;
     font-family: 'Caprasimo', cursive;
     color: rgb(34, 36, 36);
+    
 
 }
 
