@@ -23,7 +23,6 @@ document
                 if (number > numberaleatoire) {
 
                     resultat.innerHTML +=
-                        // "<h2>" + essai + (essai > 1) ? "ème" : "er" + " essai</h2>" + number + "? ... c'est -";
                         ` <div class="line"></div> <h2> ${chance}${chance > 1 ? "<sup>ème</sup>" : "<sup>er</sup>"
                         } essai</h2> <p> ${number} ? ... c'est ${number > numberaleatoire ? "➖" : "➕"} </p> `;
                     if(chance == 3) {
@@ -54,26 +53,7 @@ document
             } , 1000);
         }
     });
-            
-        // }
 
 
-//     if (number > numberaleatoire) {
-//         resultat.innerHTML +=
-
-//             // "<h2>" + essai + (essai > 1) ? "ème" : "er" + " essai</h2>" + number + "? ... c'est -";
-//             ` <div class="line"></div> <h2> ${chance} ${chance > 1 ? "ème" : "er"
-//             } essai</h2> <p> ${number} ? ... c'est ${number > numberaleatoire ? "➖" : "➕"} </p> `;
-
-//     } else if (number < numberaleatoire) {
-//         resultat.innerHTML += ` <div class="line"></div> <h2> ${chance} ${chance > 1 ? "ème" : "er"
-//             } essai </h2> <p> ${number} ? ... c'est ${number > numberaleatoire ? "➖" : "➕"} </p>`;
-
-//     } else {
-//         resultat.innerHTML += `<div class="line"></div>  <h2> Gagner ! 😃 </h2>  <h3> numéro mystère : ${numberaleatoire} </h3>`;
-//     }
-// } else {
-//     resultat.innerHTML += `<div class="line"></div>  <h2> Perdu ! 🥹 </h2>  <h3> numéro mystère : ${numberaleatoire}</h3>`;
-// }
 
 
