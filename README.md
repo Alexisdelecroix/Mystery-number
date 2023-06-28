@@ -4,10 +4,10 @@
 <div align="center">Création du jeu le chiffre mystère</div>
 
 <div align="center"> 
+  <img src="images/maquette.png" alt="" height="250px" >
   <img src="images/maquette1.png" alt="" height="250px" >
   <img src="images/maquette2.png" alt="" height="250px" >
   <img src="images/maquette3.png" alt="" height="250px" >
-  <img src="images/maquette4.png" alt="" height="250px" >
   </div>
    
 ## Mon objectif: 
