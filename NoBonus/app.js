@@ -42,7 +42,7 @@ document
                 } else if (number == numberaleatoire) {
 
                     resultat.innerHTML += `<div class="line"></div>  <h2> ${chance}${chance > 1 ? "<sup>ème</sup>" : "<sup>er</sup>"
-                    } essai </h2> <h2> Gagner ! 😃 </h2>  <h3> numéro mystère : ${numberaleatoire} </h3> 
+                    } essai </h2> <h2> Gagné ! 😃 </h2>  <h3> numéro mystère : ${numberaleatoire} </h3> 
                     <button type="button" class="btn btn-primary" onclick="refresh()">rejouer</button>`;
                     document.querySelector("button").setAttribute("disabled", "disabled");
 
