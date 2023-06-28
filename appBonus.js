@@ -88,7 +88,7 @@ function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
   console.log(numberaleatoire);
 
 
-  document
+document
     .getElementById(lvl)
     .addEventListener("click", function (event) {
       event.preventDefault();
@@ -101,12 +101,17 @@ function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
       console.log(number);
       console.log(chance);
 
+      let tester = document.getElementById(lvl);
+
 
       // Si chance est inférieur a chance1 alors le jeu commence
       if (chance < chance1) {
-
+        tester.classList.add("disabled");
+        tester.setAttribute("disabled", "disabled");
         // Si le nombre de l'utilisateur est supperieur au nombre Aléatoire alors c'est ➖
         setTimeout(() => {
+         
+
           if (number > numberaleatoire) {
             resultat.innerHTML += ` <div class="line"></div> <h2> ${chance}${chance > 1 ? "<sup>ème</sup>" : "<sup>er</sup>"
               } essai</h2> <p> ${number} ? ... c'est ${number > numberaleatoire ? "➖" : "➕"
@@ -136,7 +141,14 @@ function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
             //         document.querySelector("button").setAttribute("disabled", "disabled");
           }
           chance++;
+          
+          tester.removeAttribute("disabled");
+          tester.classList.remove("disabled");
         }, 300);
+       
+       
       }
+      // tester.removeAttribute('disabled');
+      // tester.setAttribute("disabled", false);
     });
 }
