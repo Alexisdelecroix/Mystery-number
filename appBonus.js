@@ -1,5 +1,3 @@
-
-
 // Function pour rafraichir la page au bouton rejouer
 function refresh() {
   location.reload();
@@ -14,8 +12,6 @@ let btnHard = document.getElementById("hard");
 let easySess = document.getElementById("facile");
 let mediumSess = document.getElementById("moyen");
 let hardSess = document.getElementById("difficile");
-
-
 
 // Function au click sur les boutons navigations
 btnEasy.addEventListener("click", (event) => {
@@ -36,8 +32,6 @@ btnHard.addEventListener("click", (event) => {
   }, 300);
 });
 
-
-
 // Function qui possède en paramètre les valeurs a modifier en fonction de la session
 function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
 
@@ -45,7 +39,6 @@ function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
   easySess.classList.remove("active");
   mediumSess.classList.remove("active");
   hardSess.classList.remove("active");
-
 
   // Si id === easy alors on ajoute la classe active
   if (event.target.id === "easy") {
@@ -56,8 +49,6 @@ function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
     btnEasy.setAttribute("disabled", "disabled");
     btnMedium.setAttribute("disabled", "disabled");
     btnHard.setAttribute("disabled", "disabled");
-    // btnMedium.removeAttribute('disabled');
-    // btnHard.removeAttribute('disabled');
   } else if (event.target.id === "medium") {
     mediumSess.classList.add("active");
     btnMedium.classList.add("disabled");
@@ -66,8 +57,6 @@ function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
     btnMedium.setAttribute("disabled", "disabled");
     btnEasy.setAttribute("disabled", "disabled");
     btnHard.setAttribute("disabled", "disabled");
-    // btnEasy.removeAttribute('disabled');
-    // btnHard.removeAttribute('disabled');
   } else if (event.target.id === "hard") {
     hardSess.classList.add("active");
     btnEasy.classList.add("disabled");
@@ -76,17 +65,13 @@ function myFunction(event, max, chance1, chance2, lvl, result, nombre) {
     btnHard.setAttribute("disabled", "disabled");
     btnMedium.setAttribute("disabled", "disabled");
     btnEasy.setAttribute("disabled", "disabled");
-    // btnEasy.removeAttribute('disabled');
-    // btnMedium.removeAttribute('disabled');
   }
-
 
 // Initialisation des valeurs
   let min = 1;
   let chance = 1;
   let numberaleatoire = Math.floor(Math.random() * (max - min) + min);
   console.log(numberaleatoire);
-
 
 document
     .getElementById(lvl)
@@ -103,7 +88,6 @@ document
 
       let tester = document.getElementById(lvl);
 
-
       // Si chance est inférieur a chance1 alors le jeu commence
       if (chance < chance1) {
         tester.classList.add("disabled");
@@ -111,17 +95,10 @@ document
         // Si le nombre de l'utilisateur est supperieur au nombre Aléatoire alors c'est ➖
         setTimeout(() => {
          
-
           if (number > numberaleatoire) {
             resultat.innerHTML += ` <div class="line"></div> <h2> ${chance}${chance > 1 ? "<sup>ème</sup>" : "<sup>er</sup>"
               } essai</h2> <p> ${number} ? ... c'est ${number > numberaleatoire ? "➖" : "➕"
               } </p> `;
-              // setTimeout(() => {
-              //   resultat.innerHTML += `<p> ${number} ? ... c'est ${number > numberaleatoire ? "➖" : "➕"
-              // } </p> `
-              // }, 700);
-              
-              // Si chance == chance 2 on affiche le message Perdu !
             if (chance == chance2) {
               resultat.innerHTML += `<h2> Perdu ! 🥹 </h2>  <h3> numéro mystère : ${numberaleatoire} </h3>
                     <button type="button" class="btn btn-primary" onclick="refresh()">rejouer</button>`;
@@ -139,16 +116,16 @@ document
               } essai </h2> <h2> Gagné ! 😃 </h2>  <h3> numéro mystère : ${numberaleatoire} </h3> 
                  <button type="button" class="btn btn-primary" onclick="refresh()">rejouer</button>`;
             //         document.querySelector("button").setAttribute("disabled", "disabled");
+          
           }
           chance++;
-          
           tester.removeAttribute("disabled");
           tester.classList.remove("disabled");
-        }, 300);
-       
-       
+          if (number == numberaleatoire) {
+            tester.classList.add("disabled");
+            tester.setAttribute("disabled", "disabled");
+          }
+        }, 300); 
       }
-      // tester.removeAttribute('disabled');
-      // tester.setAttribute("disabled", false);
     });
 }
