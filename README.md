@@ -13,21 +13,15 @@
 ## Mon objectif: 
 
 <ul>
-<li>Création de la charte graphique</li>
-<li>Établir la maquette</li>
-<li>Développer le site web en épousant au mieux la maquette</li>
-<li>Optimisé la version mobile</li>
-<li>Création d'un mode Dark</li>
-<li>Analysez les problèmes de performances et les résoudres</li>
+<li>Création du chiffre mystère</li>
+<li>Plusieurs niveau de diffilcuté</li>
+
 </ul>
 
 ### Resources utlisées: 
 
 <ul>
-<li>Font awesome pour les icones</li>
-<li>Figma pour la maquette et Wireframe</li>
 <li>GoogleFonts pour les polices</li>
-<li>Librairies GSAP</li>
 <li>Github</li>
 
 </ul>
