@@ -1,7 +1,7 @@
 ﻿<h1 align="center"># Mystery-number</h1>
 
 <div align="center"><h2>Contexte du projet </h2></div>
-<div align="center"><h3> ###Création du jeu le chiffre mystère</h3></div>
+<div align="center"><h3>Création du jeu le chiffre mystère</h3></div>
 
 <div align="center"> 
   <img src="images/maquette.png" alt="" height="250px" >
