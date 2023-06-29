@@ -22,13 +22,13 @@ btnEasy.addEventListener("click", (event) => {
 
 btnMedium.addEventListener("click", (event) => {
   setTimeout(() => {
-    myFunction(event, 50, 3, 2, "lvlMedium", "resultat1", "nombre1");
+    myFunction(event, 50, 5, 4, "lvlMedium", "resultat1", "nombre1");
   }, 300);
 
 });
 btnHard.addEventListener("click", (event) => {
   setTimeout(() => {
-    myFunction(event, 100, 2, 1, "lvlHard", "resultat2", "nombre2");
+    myFunction(event, 100, 8, 7, "lvlHard", "resultat2", "nombre2");
   }, 300);
 });
 
